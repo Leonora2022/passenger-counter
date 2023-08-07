@@ -1,0 +1,77 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('background.svg');
+    background-size: contain;
+    font-family: 'Teko', sans-serif;
+   
+  
+}
+header, footer {
+    height: 8vh;
+    background-color: #576490;
+}
+/* header {
+    float: left;
+} */
+article {
+    display: flex;
+    flex: 1; 
+}
+.wrapper {
+    background-color: #F1D6B8;
+    width: 40%;
+    border-radius: .5em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding:5.5em .2em;
+    font-weight: bolder;
+    text-align: center;
+}
+.wrapper > .title{
+    font-size: 2.5em;
+    margin: .5em 0 .5em;
+}
+.wrapper > .counter {
+    font-size: 4em;
+}
+.wrapper > button {
+    width: 70%;
+    border-radius: .3em;
+    margin: .5em auto;
+    padding: .5em .2em;
+    font-size: 1.3em;
+    color: azure;
+    cursor: pointer;
+}
+.increment-btn {
+background-color: #2E1760;
+}
+.save-btn {
+  background-color: #0B4F6c;
+}
+.previous-details {
+    font-size: 1.5em;
+    margin: .2em;
+}
+.save-count {
+    display: block;
+    width: 100%;
+}
+.footer {
+   padding: 10px;
+   font-size: 1.1em;
+   text-align: center;
+}
+#author {
+    color: #F5FF90;
+    text-decoration: none;
+}
