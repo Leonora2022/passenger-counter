@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+ <mask id="mask">
+ <rect x="0" y="0" width="100%" height="100%" fill="gray"/>
+ </mask>
+  <style>
+  .eye {
+    fill: black;
+    stroke: white;
+    stroke-width: 4;
+  }
+  #nose {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+  }
+  #hands {
+    stroke: grey;
+    stroke-width: 40;
+    stroke-linecap: round;
+  }
+  .leg {
+    stroke: gray;
+    stroke-width: 40;
+    stroke-linecap: round;
+  }
+  .fair {
+    fill: bisque;
+  }
+  .pink {
+    fill: pink;
+  }
+  .chocolate {
+    fill: chocolate;
+  }
+  #human, #sub-human {
+    mask: url(#mask);
+  }
+  
+  </style>
+ </defs>
+ <g id="human">
+    <circle cx="100" cy="100" r="50" id="head"/>
+    <circle cx="80" cy="80" r="7" class="eye"/>
+    <circle cx="120" cy="80" r="7" class="eye"/>
+   <path d="M80,100 A30 50 0 0 0 120,120" id="nose"/>
+    <line x1="20" y1="165" x2="180" y2="165" id="hands"/>
+    <line x1="80" y1="200" x2="20" y2="300" class="leg"/>
+    <line x1="100" y1="200" x2="200" y2="300" class="leg"/>
+</g>
+ <g id="sub-human">
+ <use xlink:href="#human" transform="translate(250,10) skewX(10)" class="chocolate"/>
+<use xlink:href="#human" transform="translate(550,10) skewY(10)" class="fair"/>
+<use xlink:href="#human" transform="translate(820,100) skewX(-10)" class="pink"/>
+<use xlink:href="#human" transform="translate(820,350) skewX(-10)" class="fair"/>
+<use xlink:href="#human" transform="translate(620,350) skewY(10)"  />
+<use xlink:href="#human" transform="translate(40, 360) skewX(-10)" class="chocolate"/>
+<use xlink:href="#human" transform="translate(340,350) skewX(-10)" class="pink"/>
+</g>
+</svg>
